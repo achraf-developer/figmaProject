@@ -42,6 +42,9 @@ ul {
 .section__container__padding {
   padding: 50px;
 }
+.bg-green {
+  background-color: var(--bg-color-green);
+}
 .section__divider {
   width: 100%;
   /* height: auto; */
