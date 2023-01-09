@@ -39,14 +39,23 @@ ul {
 .text-green {
   color: var(--font-color-green);
 }
+.mt-80 {
+  margin-top: 80px;
+}
+.mt-30 {
+  margin-top: 50px;
+}
 .section__container__padding {
-  padding: 50px;
+  padding: 50px 80px;
 }
 .bg-green {
   background-color: var(--bg-color-green);
 }
 .bg-white {
   background-color: var(--bg-color-white);
+}
+.section__padding {
+  padding: 50 90px;
 }
 .section__divider {
   width: 100%;
@@ -394,6 +403,123 @@ ul {
   padding: 20px 30px;
   border-radius: 12px;
 }
+/* start section 4 */
+.section__background {
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.section__title__line::after {
+  content: "";
+  position: absolute;
+  top: 69px;
+  left: 90px;
+  width: 20%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--bg-color-green);
+}
+.contan__card {
+  position: relative;
+  width: 326px;
+  height: 423px;
+  background-color: red;
+  border-radius: 9px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.conton__flag {
+  position: absolute;
+  width: 68px;
+  height: 92px;
+  top: 0px;
+  left: 20px;
+}
+.conton__card__title {
+  position: absolute;
+  top: 16px;
+  left: 120px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  width: 148px;
+}
+.conton__card__desc {
+  width: 246px;
+  height: auto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.conton__card__btn {
+  color: #ffffff;
+  width: 237.24px;
+  height: 38px;
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+  line-height: 38px;
+  text-align: center;
+}
+.conton__card__btn:hover {
+  background-color: var(--bg-color-white);
+  color: var(--bg-color-green);
+}
+.conton__bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.bern_bg {
+  background-image: url(../img/bern_background.png);
+}
+.freiburg_bg {
+  background-image: url(../img/bern_background.png);
+}
+.geneve_bg {
+  background-image: url(../img/geneve_background.png);
+}
+.vaud_bg {
+  background-image: url(../img/vaud_background.png);
+}
+.valais_bg {
+  background-image: url(../img/valais_background.png);
+}
+
+.neuchatel_bg {
+  background-image: url(../img/neuchatel_background.png);
+}
+.jura_bg {
+  background-image: url(../img/jura_background.png);
+}
+
+.swiper2 {
+  width: 880px;
+  overflow: hidden;
+}
+.swiper2 .swiper-slide {
+  scale: 0.8;
+  transition: scale 350ms 150ms ease-in-out;
+}
+.swiper2 .swiper-slide-active {
+  scale: 0.9;
+  z-index: 1;
+}
+.siwper2 .swiper-pagination {
+  bottom: -10px !important;
+}
+/* end section 4 */
+
 /* Larger than mobile */
 @media (min-width: 400px) {
 }

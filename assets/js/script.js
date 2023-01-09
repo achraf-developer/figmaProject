@@ -89,3 +89,43 @@ dots.forEach((dot, index) => {
     currentSlide = index;
   });
 });
+
+const swiper2 = new Swiper(".swiper2", {
+  autoplay: true,
+  centeredSlides: true,
+
+  // Optional parameters
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  // Navigation arrows
+  // And if we need scrollbar
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    // 326
+    // 260.8+293.4+260.8
+  },
+});
