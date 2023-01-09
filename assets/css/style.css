@@ -332,7 +332,9 @@ ul {
 }
 .number {
   float: left;
-  min-width: 48px;
+  /* min-width: 48px; */
+  width: 86px;
+  height: 129px;
 }
 .card__title {
   font-weight: 900;
@@ -408,7 +410,7 @@ ul {
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center bottom;
 }
 .section__title__line::after {
   content: "";
