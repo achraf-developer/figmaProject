@@ -129,3 +129,9 @@ const swiper2 = new Swiper(".swiper2", {
     // 260.8+293.4+260.8
   },
 });
+const playVideo=()=> {
+  var videoEl = document.getElementsByTagName('video')[0];
+  var sourceEl = videoEl.getElementsByTagName('source')[0];
+  sourceEl.src = '../img/3202442854.mp4';
+  videoEl.load();
+ }
