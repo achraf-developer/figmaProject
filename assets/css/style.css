@@ -4,6 +4,7 @@
   /* Backgrounds Colors */
   --bg-color-white: #fff;
   --bg-color-green: #5cad2f;
+  --bg-color-orange:#ffae10;
   /* Fonts Colors  */
   --font-color-white: #ffffff;
   --font-color-black: #011524;
@@ -47,6 +48,9 @@ ul {
 }
 .section__container__padding {
   padding: 50px 80px;
+}
+.bg-orange{
+  background-color: var(--bg-color-orange);
 }
 .bg-green {
   background-color: var(--bg-color-green);
@@ -140,6 +144,7 @@ width: 417.74px;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .main-menu li {
   height: 30px;
@@ -168,12 +173,13 @@ width: 417.74px;
   min-width: 100%;
   min-height: 572px;
   position: relative;
+
   /* max-width: 1308px; */
 }
 .slide-container .slide {
-  display: none;
+  /* display: none; */
   width: 100%;
-  height: 572px;
+  /* height: 572px; */
   position: relative;
   font-family: "Barlow", sans-serif;
   font-weight: 700;
@@ -187,9 +193,11 @@ width: 417.74px;
   position: absolute;
   width: 500px;
   top: 80px;
+  text-shadow: 3px 3px 4px #01152440;
 }
 .slide-container .slide .text.text-slide-1 {
   left: 35px;
+  
 }
 .slide-container .slide .text.text-slide-2 {
   width: 450px !important;
@@ -293,6 +301,7 @@ width: 417.74px;
   justify-content: space-between;
   border-radius: 12px 12px 0 0;
   width: 240px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .indic .value {
   height: auto;
@@ -372,6 +381,7 @@ width: 417.74px;
   position: relative;
   padding-top: 51px;
   padding-left: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .grid-item1 {
   grid-area: 1 / 1 / 2 / 2;
@@ -403,6 +413,7 @@ width: 417.74px;
 .slider__marque {
   width: 100%;
   height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .slider__marque img {
   width: 127px;
@@ -436,6 +447,7 @@ width: 417.74px;
   background-color: red;
   border-radius: 9px;
   color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
 }
 .conton__flag {
@@ -524,6 +536,28 @@ width: 417.74px;
   scale: 0.9;
   z-index: 1;
 }
+#video1Btn{
+  width: 100%;
+  height: auto;
+}
+/* #video1Btn{
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: auto;
+  right: 50%;
+  transform: translate(-50%,-50%); */
+
+#video1Btn img{
+  width: 100%;
+  height: auto;
+}
+#video1Btn img:hover{
+  transform: scale(1.1);
+}
+
 .siwper2 .swiper-pagination {
   bottom: -10px !important;
 }

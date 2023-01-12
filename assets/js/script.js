@@ -130,8 +130,9 @@ const swiper2 = new Swiper(".swiper2", {
   },
 });
 const playVideo=()=> {
+  var img = document.getElementById("video1Btn");
   var videoEl = document.getElementsByTagName('video')[0];
   var sourceEl = videoEl.getElementsByTagName('source')[0];
-  sourceEl.src = '../img/3202442854.mp4';
+  sourceEl.src = './assets/img/video.mp4';
   videoEl.load();
  }

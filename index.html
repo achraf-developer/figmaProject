@@ -53,8 +53,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
  <!-- Start slider -->
- <div class="slide-container row u-full-width">
-  <div class="slide animate__animated animate__fadeIn animate__faster">
+ <div class="slide-container row u-full-width ">
+  <div class="slide animate__animated animate__fadeIn animate__faster bg-ornage">
    <img src='./assets/img/Vector.png' alt=''>
    <div class="text text-slide-1 animate__animated animate__lightSpeedInLeft animate__faster">
     <p class="text-slider-1 ">
@@ -71,7 +71,7 @@
     </a>
    </div>
  </div>
- <div class="slide animate__animated animate__fadeIn animate__faster">
+ <div class="slide animate__animated animate__fadeIn animate__faster bg-ornage">
    <img src='./assets/img/slide2.jpg' alt=''>
    <div class="text text-slide-2 animate__animated animate__lightSpeedInRight animate__faster">
     <p class="text-slider-2 ">
@@ -98,15 +98,23 @@
 <!-- End slider -->
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="divider u-full-width">
+  <!-- <div class="divider u-full-width">
     <img src="./assets/img/section1__1.png" alt="" class="section__divider">
     <p class="section__title section__1__title">
       Combien de temps pour recharger une voiture électrique ?
     </p>
-  </div>
+  </div> -->
+  <section>
+   
   <div class="container">
     <!-- Start section 1 -->
     <div class="row">
+      <div class="mt-80">
+        <h2 class="section__title" style="width: 90%;">
+          Combien De Temps Pour Recharger<br>
+          <span class=" text-green" style="padding:5px 5px; border-radius: 12px;"> Une Voiture </span>Électrique ?
+        </h2>
+      </div>
       <div class="column">
         <div class="grap_container f-d f-a-i-c f-a-i-e">
         <div class="indic indic__1">
@@ -142,6 +150,7 @@
       </div>
    </div>
   </div>
+</section>
     <!-- End section 1 -->
      <!-- Start section 2 -->
      <div class="divider f-d f-a-i-c f-j-c-s-c f-d-c u-full-width">
@@ -339,7 +348,7 @@
     <section>
       <div class="container">
       <div class="row">
-          <div>
+          <div class="">
           <h3 class="section__sub__title text-green  mt-30">
             Notre Mission
           </h3>
@@ -355,12 +364,26 @@
               Les modèles de 3,7 kW et 7,4 kW fonctionnent en monophasé et les modèles de 11 kW, de 22 kW en triphasé.
               Une flexibilité adaptée à vos besoins , connectivité à vie , facile à installer , accessible via la carte RFID et l’application mobile.</p>
           </div>
-          <div class="one-half column" >
-            <video id="video" width="600">
-              <source type="video/mp4">
+          <div class="one-half column" style="position: relative; border-radius: 9px; background-color: salmon; height: 500px;" >
+            <!-- <a id="video1Btn" onclick="playVideo()" value="Load Video 1">
+              <video id="video" width="100%" height="auto">
+                <source type="video/mp4" >
+                Your browser does not support HTML5 video.
+              </video>
+            </a> -->
+            <!-- <video id="video" width="100%" height="auto" poster="./assets/img/video__background.png" style="position: relative; border-radius: 9px;">
+              <source type="video/mp4" >
               Your browser does not support HTML5 video.
             </video>
-            <img src="./assets/img/video__background.png" id="video1Btn" onclick="loadVideo1()" value="Load Video 1" width="100%" height="100%"  />
+            <a id="video1Btn" onclick="playVideo()" value="Load Video 1"> <img src="./assets/img/playBtn.png"></a> -->
+          </div>
+        </div>
+        <div class="row mt-80">
+          <div class="column">
+            <video  controls width="100%" height="auto" poster="./assets/img/video__background.png" style="border-radius: 13px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+              <source type="video/mp4" src="./assets/img/video.mp4">
+              Your browser does not support HTML5 video.
+            </video>
           </div>
         </div>
       </div>
