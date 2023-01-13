@@ -40,6 +40,9 @@ ul {
 .text-green {
   color: var(--font-color-green);
 }
+.text-ornage{
+  color: var(--bg-color-orange);
+}
 .mt-80 {
   margin-top: 80px;
 }
@@ -165,20 +168,27 @@ width: 417.74px;
 
 /* Start slider  */
 .slide-container {
+  min-height: 720px;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   /* max-width: 1000px; */
   margin: auto;
-  min-width: 100%;
-  min-height: 572px;
+  /* min-width: 100%;
+  min-height: 572px; */
   position: relative;
 
   /* max-width: 1308px; */
 }
 .slide-container .slide {
+  max-width: 1200px;
+  min-width: 100%;
+  max-height: 720px;
+
   /* display: none; */
-  width: 100%;
+ 
   /* height: 572px; */
   position: relative;
   font-family: "Barlow", sans-serif;
@@ -191,17 +201,17 @@ width: 417.74px;
 }
 .slide-container .slide .text {
   position: absolute;
-  width: 500px;
-  top: 80px;
+  width: 800px;
+  top: 30%;
   text-shadow: 3px 3px 4px #01152440;
 }
 .slide-container .slide .text.text-slide-1 {
-  left: 35px;
+  left: 25px;
   
 }
 .slide-container .slide .text.text-slide-2 {
   width: 450px !important;
-  right: 0px;
+  right: 25px;
 }
 .slide-container .slide .text p.text-slider-1 {
 }
@@ -599,6 +609,8 @@ width: 417.74px;
 }
 .contact__us form input{
   /* display: block; */
+  outline: var(--bg-color-green);
+  border: 1px solid var(--bg-color-green);
 }
 .contact__us__graph{
   min-width: 100%;
@@ -615,7 +627,7 @@ width: 417.74px;
 /* Start section faq  */
 .faq-header{
   font-size: 42px;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px solid #ccc;
   padding: 24px;
 }
 
@@ -625,11 +637,12 @@ width: 417.74px;
 
 .faq-question {
   padding: 20px 0;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .panel-title {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-weight: 900;
   width: 100%;
   position: relative;
   margin: 0;
@@ -639,7 +652,7 @@ width: 417.74px;
 }
 
 .panel-content {
-  font-size: 20px;
+  /* font-size: 20px; */
   padding: 0px 14px;
   margin: 0 40px;
   height: 0;
@@ -654,18 +667,21 @@ width: 417.74px;
 }
 
 .panel:checked ~ .panel-content{
+  z-index: 100;
   height: auto;
   opacity: 1;
   padding: 14px;
 }
 
 .plus {
+  font-size: 35px;
   position: absolute;
   margin-left: 20px;
   margin-top: 4px;
   z-index: 5;
-  font-size: 42px;
-  line-height: 100%;
+  font-size: 16px;
+  /* line-height: 100%; */
+  line-height: 36px;
   -webkit-user-select: none;    
   -moz-user-select: none;
   -ms-user-select: none;
@@ -676,7 +692,6 @@ width: 417.74px;
   -o-transition: .2s ease;
   transition: .2s ease;
 }
-
 .panel:checked ~ .plus {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
