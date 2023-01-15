@@ -28,7 +28,7 @@
  />
  <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  href="./assets/lib/Skeleton-2.0.4/css/swipper.css"
 />
    <link rel="stylesheet" href="assets/css/style.css">
   <!-- Favicon
@@ -53,7 +53,49 @@
     <!-- End Navigation section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  <!-- Start slider -->
- <div class="slide-container container u-full-width">
+<section class="cd-slider">
+  <ul>
+   
+    <li data-color="#011524">
+      <div class="content" style="background-image:url(./assets/img/pngegg3.svg)">
+        <blockquote>
+          <p class="">
+            Premier fabricant mondial  de recharge pour véhicules électriques
+          </p>
+          <p class="">
+            obtenez maintenaint votre solution domestique de borne de recharge 
+          </p> <a href="" class="big-btn1">
+            DEMANDE d’OFFRE
+          </a>
+        </blockquote>
+      </div>
+    </li>
+    <li data-color="#00dd24">
+      <div class="content" style="background-image:url(./assets/img/pngegg3.svg)">
+        <blockquote>
+        <br>
+          <p class="">
+            Adaptee aux particuliers et aux professionnels
+          </p>
+          <p class="">
+            On vous propose une meilleure solution de recharge pour VE  
+          </p>
+          <p class="">
+           Une borne de recharge rapide sur laquelle vous pouvez compter
+          </p>
+          <a href="" class="big-btn1">
+            DEMANDE d’OFFRE
+          </a>
+        </blockquote>
+      </div>
+    </li>
+  </ul>
+  <nav>
+    <div><a class="prev" href="#"></a></div>
+    <div><a class="next" href="#"></a></div>
+  </nav>
+</section>
+ <!-- <div class="slide-container container u-full-width">
   <div class="slide animate__animated animate__fadeIn animate__faster">
    <img src='./assets/img/Vector.png' alt=''>
    <div class="text text-ornage text-slide-1 animate__animated animate__lightSpeedInLeft animate__faster">
@@ -94,7 +136,7 @@
   <span class="dot"></span>
   <span class="dot"></span>
 </div>
-</div>
+</div> -->
 <!-- End slider -->
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -104,11 +146,38 @@
       Combien de temps pour recharger une voiture électrique ?
     </p>
   </div> -->
-  <section>
-   
-  <div class="container">
+ 
+ 
     <!-- Start section 1 -->
-    <div class="row">
+   
+    <section class="page-contain">
+      <div class="container" style="padding: 30px 0;">
+        <h2 class="section__title" style="width: 90%;">
+          Combien De Temps Pour Recharger<br>
+          <span class=" text-green" style="padding:5px 5px; border-radius: 12px;"> Une Voiture </span>Électrique ?
+        </h2>
+      </div>
+      <div class="page-contain-card section__padding ">
+      <a href="#" class="data-card">
+        <h3>270</h3>
+        <h4>Care Facilities</h4>
+        <p>Aenean lacinia bibendum nulla sed consectetur.</p>
+      </a>
+      <a href="#" class="data-card">
+        <h3>12,000</h3>
+        <h4>Employees</h4>
+        <p>Etiam porta sem malesuada.</p>
+      </a>
+    </div>
+    <div class="page-contain-card section__padding ">
+      <a href="#" class="data-card">
+        <h3>270</h3>
+        <h4>Care Facilities</h4>
+        <p>Aenean lacinia bibendum nulla sed consectetur.</p>
+      </a>
+    </div>
+    </section>
+    <!-- <div class="row">
       <div class="mt-80">
         <h2 class="section__title" style="width: 90%;">
           Combien De Temps Pour Recharger<br>
@@ -148,8 +217,8 @@
       </div>
       <img src="./assets/img/borne.png" class="borne__image"/>
       </div>
-   </div>
-  </div>
+   </div> -->
+ 
 </section>
     <!-- End section 1 -->
      <!-- Start section 2 -->
@@ -254,10 +323,11 @@
     </section >
         <!-- End section 3 -->
   <!-- start Section 4 -->
-    <div class="container .section__container__padding section__background">
+  <section class="section__background">
+    <div class="container .section__container__padding ">
       <div class="row ">
         <div class="clomun ">
-          <h1 class="section__title section__title__line mt-30">
+          <h1 class="section__title section__title__line" style="padding-top: 30px;">
             Investissement
           </h1>
           <p  style="text-align: center;" class="mt-80 ">La Suisse adopte un programme de soutien qui encourage à l’installation des bornes de recharge à un coût réduit grâce aux aides financières de l’État dont les sept cantons de suisse Romande y offrent.
@@ -343,6 +413,7 @@
         </div>
       </div>
     </div>
+    </section>
   <!-- End Section 4 -->
   <!-- Start Section 5 -->
     <section>
@@ -363,11 +434,25 @@
             <p class="mt-30">On distingue plusieurs catégories de chargeurs, classées en fonction de leur puissance.
               Les modèles de 3,7 kW et 7,4 kW fonctionnent en monophasé et les modèles de 11 kW, de 22 kW en triphasé.
               Une flexibilité adaptée à vos besoins , connectivité à vie , facile à installer , accessible via la carte RFID et l’application mobile.</p>
+                              <div class="swiper3">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper product__slider">
+    <!-- Slides -->
+    <div class="swiper-slide   product__slide product__1"><img src="./assets/img/product1.png"/></div>
+     <div class="swiper-slide  product__slide product__2"><img src="./assets/img/product2.png" alt=""></div>
+    <div class="swiper-slide  product__slide product__3"><img src="./assets/img/product3.png" alt=""></div>
+    <div class="swiper-slide  product__slide product__4"><img src="./assets/img/product4.png" alt=""></div>
+  </div>
+ 
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
           </div>
-          <div class="one-half column" style="position: relative; border-radius: 9px; background-color: salmon; height: 500px;" >
+          <div class="one-half column" style="position: relative; border-radius: 9px; background-color: salmon; height: 575px;" >
             <div class="row mt-80">
               <div class="column">
-              
+
               </div>
             </div>
             <!-- <a id="video1Btn" onclick="playVideo()" value="Load Video 1">
@@ -386,11 +471,12 @@
       </div>
     </section>
     <section>
-      <div class="container u-full-width mt-80">
-        <video  width="100%" controls height="auto" poster="./assets/img/video__background.png" style="border-radius: 13px; margin: 0; padding: 0;">
+      <div class="container u-full-width mt-80 video__container">
+        <video id="promotion__video" width="100%"  height="auto" poster="./assets/img/video__background.png" class="promotion__video">
           <source type="video/mp4"  src="./assets/img/video.mp4" >
           Your browser does not support HTML5 video.
         </video>
+        <button id="btn_play" class="btn_play"></button>
       </div>
     </section>
     <section style="background-color: #f5f7fa;">
@@ -481,7 +567,7 @@
  
   <!-- End Section 6 -->
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./assets/lib/js/swipper.js"></script>
   <script type="text/javascript" src="./assets/js/script.js" async></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
