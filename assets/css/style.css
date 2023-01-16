@@ -828,6 +828,15 @@ background-image: url(../img/borne1.png);
   z-index: 1;
 }
 /* End product slider */
+.invoation__graph{
+  width: 475px;
+  height: 516.95px;
+  position: relative; 
+  background-image: url(../img/renovable__ener2.svg); 
+  background-size: 350px 500px;
+  background-repeat: no-repeat;
+  background-position: center 30px;
+}
 /* Start Video */
 .video__container {
   position: relative;
