@@ -697,7 +697,7 @@ background-image: url(../img/borne1.png);
 .section__background {
   /* width: 1436.41px;
   height: 800px; */
-  background-image: url(../img/map.png);
+  background-image: url(../img/map.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 20% center;

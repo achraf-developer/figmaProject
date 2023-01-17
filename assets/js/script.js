@@ -1,3 +1,4 @@
+new WOW().init();
 (function () {
   var autoUpdate = false,
     timeTrans = 4000;
