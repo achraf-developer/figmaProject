@@ -1,5 +1,5 @@
-new WOW().init();
 (function () {
+  new WOW().init();
   var autoUpdate = false,
     timeTrans = 4000;
 
@@ -28,19 +28,15 @@ new WOW().init();
   if (item.length <= 1) {
     nav.style.display = "none";
   }
-
   function prevSlide() {
     var currentSlide = cdSlider.querySelector("li.current_slide"),
       prevElement = currentSlide.previousElementSibling,
       prevSlide = prevElement !== null ? prevElement : item[item.length - 1],
       prevColor = prevSlide.getAttribute("data-color"),
       el = document.createElement("span");
-
     currentSlide.className = "";
     prevSlide.className = "current_slide";
-
     nav.children[0].appendChild(el);
-
     var size =
         cdSlider.clientWidth >= cdSlider.clientHeight
           ? cdSlider.clientWidth * 2
@@ -142,9 +138,6 @@ new WOW().init();
 const swiper = new Swiper(".swiper", {
   // Optional parameters,
   loop: true,
-  autoplay: {
-    delay: 5000,
-  },
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
