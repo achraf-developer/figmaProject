@@ -389,12 +389,12 @@ href="./assets/lib/Skeleton-2.0.4/css/animate.css"
        <div class="row contact__us u-full-width mt-80">
         <h1 class="section__title">Contactez-Nous</h1>
         <div class="form__container">
-          <form  method="POST" action="https://script.google.com/macros/s/AKfycbwFChAwZXaoQVHddfKbsekw891QW6IrWEcdDz7gcnA/dev" class="mt-80" style="padding: 100px 80px;">
-            <input  name="Nom" type="text" placeholder="Nom"  required>
-            <input  name="Prenom" type="text" placeholder="Prenom"  required>
-            <input  name="Email" type="Email" placeholder="Email"  required>
-            <input  name="Telephone" type="tel" placeholder="Telephone"  required>
-            <button type="submit">Envoyer</button>
+          <form id="form"  method="post" class="mt-80" style="padding: 100px 80px;">
+            <input  name="Nom" type="text" id="nom" placeholder="Nom"  required>
+            <input  name="Prenom" type="text" id="prenom" placeholder="Prenom"  required>
+            <input  name="Email" type="Email" id="email" placeholder="Email"  required>
+            <input  name="Telephone" type="tel" id="telephone" placeholder="Telephone"  required>
+            <button type="submit" id="submit">Envoyer</button>
           </form>
         </div>
         
@@ -492,6 +492,30 @@ href="./assets/lib/Skeleton-2.0.4/css/animate.css"
 <!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
   <script type="text/javascript" src="./assets/js/script.js" async></script>
+  <script>
+    const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycby4V94pgvtt15foX71vy0rRxKL3fmSHCp77tej2JD4/dev'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          // alert('Success!', response)
+          console.log(response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+      //  alert('Error!', error.message)
+      console.log(error)
+         submitButton.disabled = false
+
+       }
+       )
+   })
+ </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
